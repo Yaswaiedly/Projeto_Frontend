@@ -93,7 +93,7 @@ header h1 {
 .btn.active-flex {
     background: var(--bg-card);
     color: var(--primary);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 .btn.active-grid {
     background: var(--bg-card);

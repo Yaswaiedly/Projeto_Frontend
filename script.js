@@ -21,20 +21,26 @@ for (let i=1; i <=itens; i++){
     `;
     container.appendChild(iten);
 
-    function setMode(mode){
-        if(mode === 'Flex'){
-                container.className = "demo-container mode-flex";
-                btnFlex.classList.add =("active-grid");
-                btnGrid.classList.remove("active-grid");
+    function setMode(mode) {
+    if (mode === 'flex') {
 
-                txtAxis.innerText = "Unidimensional (linha)";
-                txtIdeal.innerText ="O layout é calculado item a item. Ótimo para distribuir espaço em uma linha";
+        container.className = "demo-container mode-flex";
 
-        } else {
+        btnFlex.classList.add("active-flex");
+        btnGrid.classList.remove("active-grid");
 
-        }
-    
+        txtAxis.innerText = "Unidimensional (linha)";
+        txtIdeal.innerText = "O layout é calculado item a item. Ótimo para distribuir espaço em uma linha";
+
+    } else {
+
+        container.className = "demo-container mode-grid";
+
+        btnGrid.classList.add("active-grid");
+        btnFlex.classList.remove("active-flex");
+
+        txtAxis.innerText = "Bidimensional (Grade)";
+        txtIdeal.innerText = "Define a estrutura primeiro. Alinhamento rigoroso de colunas e linhas";
     }
 }
-
-
+}
